@@ -123,7 +123,7 @@ async.parallel
 
     cities = _.sortBy cities, (city) -> city.name
 
-    csv().from(cities).to('out/cities.csv')
+    csv().from(cities).to('out/cities.csv', { columns: ['name', 'zipCode', 'nisCode', 'province'], header: true })
 
     console.log missing
     console.log missing.length
