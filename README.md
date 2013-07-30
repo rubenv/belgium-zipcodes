@@ -7,8 +7,6 @@ Input is in the `data` folder (can be redownloaded from their sources using the 
 
 Output (the one you care about) in the `out` folder.
 
-Also supplied is a TopoJSON file of Belgium, with NIS codes for each city: `topology-belgium.json`.
-
 ## License 
 
     (The MIT License)
