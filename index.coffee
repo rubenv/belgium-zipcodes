@@ -72,9 +72,11 @@ async.parallel
             name: name
             zipCode: zipCode
             province: province
+            main: 0
 
         if city.name == city.name.toUpperCase()
             city.name = toTitleCase(city.name)
+            city.main = 1
 
         nis = niscodes[name.toLowerCase()]
         if nis # Direct hit
@@ -123,7 +125,7 @@ async.parallel
 
     cities = _.sortBy cities, (city) -> city.name
 
-    csv().from(cities).to('out/cities.csv', { columns: ['name', 'zipCode', 'nisCode', 'province'], header: true })
+    csv().from(cities).to('out/cities.csv', { columns: ['name', 'zipCode', 'nisCode', 'province', 'main'], header: true })
 
     console.log missing
     console.log missing.length
