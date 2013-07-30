@@ -121,6 +121,8 @@ async.parallel
     refilter(findNisByZip)
     refilter(findNisByName)
 
+    cities = _.sortBy cities, (city) -> city.name
+
     csv().from(cities).to('out/cities.csv')
 
     console.log missing
