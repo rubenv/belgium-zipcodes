@@ -7,6 +7,8 @@ Input is in the `data` folder (can be redownloaded from their sources using the 
 
 Output (the one you care about) in the `out` folder.
 
+You'll need these if you want to make choropleths: http://bl.ocks.org/mbostock/4060606
+
 ## License 
 
     (The MIT License)
